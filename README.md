@@ -1,4 +1,31 @@
 # tf-do-k8s-cluster-module
+
+## Example
+
+```bash
+terraform {
+  required_version = ">= 1.5"
+  required_providers {
+    digitalocean = {
+      source  = "digitalocean/digitalocean"
+      version = "~> 2.30.0"
+    }
+  }
+# Configure the DigitalOcean Provider
+# export DIGITALOCEAN_TOKEN="..."
+provider "digitalocean" {
+  token = var.do_token
+}
+
+module "mathminds-w2app-nyc1" {
+  source                             = "github.com/CHIP0K/tf-do-k8s-cluster-module.git?ref=v.0.0.0"
+  PROJECT_NAME                       = "my-k8s-cluster"
+  DO_K8S_VERSION_PREFIX              = "1.28."
+  DO_MACHINE_GENERAL_NODES_AUTOSCALE = true
+}
+
+```
+
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
