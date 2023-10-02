@@ -5,12 +5,13 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_digitalocean"></a> [digitalocean](#requirement\_digitalocean) | ~> 2.30.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_digitalocean"></a> [digitalocean](#provider\_digitalocean) | n/a |
+| <a name="provider_digitalocean"></a> [digitalocean](#provider\_digitalocean) | ~> 2.30.0 |
 
 ## Modules
 
@@ -20,8 +21,8 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [digitalocean_kubernetes_cluster.k8s-cluster](https://registry.terraform.io/providers/hashicorp/digitalocean/latest/docs/resources/kubernetes_cluster) | resource |
-| [digitalocean_kubernetes_versions.k8s_version](https://registry.terraform.io/providers/hashicorp/digitalocean/latest/docs/data-sources/kubernetes_versions) | data source |
+| [digitalocean_kubernetes_cluster.k8s-cluster](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/kubernetes_cluster) | resource |
+| [digitalocean_kubernetes_versions.k8s_version](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/data-sources/kubernetes_versions) | data source |
 
 ## Inputs
 
